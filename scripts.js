@@ -38,8 +38,13 @@ const toggleNavItems = () => {
   navBar.style.backgroundColor = "var(--secondary-color)";
   navBar.style.boxShadow = "0px 4px var(--shadow-color)";
 
-  const navItems = document.getElementById("nav-items");
-  navItems.style.display = navItems.style.display === "none" || navItems.style.display === "" ? "flex" : "none";
+  if (document.body.clientWidth < 901) {
+    const navItems = document.getElementById("nav-items");
+    const displayStyle = navItems.style.display;
+
+    const isHidden = displayStyle === "none" || displayStyle === "";
+    navItems.style.display = isHidden ? "flex" : "none";
+  }
 };
 
 const enableMenuButtons = () => {
