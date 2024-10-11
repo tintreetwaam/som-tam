@@ -170,22 +170,38 @@ div.landing-point {
   bottom: 64px;
 }
 
+img#banner {
+  width: 100%;
+}
+
 main#content {
   display: flex;
   flex-direction: column;
   gap: 64px;
 
-  margin: 64px;
+  margin: 0px 64px;
   font-family: SFPro;
 
   @media (width < 900px) {
     gap: 32px;
-    margin: 32px 24px;
+    margin: 0px 24px;
   }
 }
 
-img#banner {
-  width: 100%;
+p#tagline {
+  margin: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--secondary-color);
+
+  font-family: Urzeit;
+  font-weight: 200px;
+  font-size: 28px;
+
+  @media (width < 900px) {
+    margin: 16px;
+    font-size: 24px;
+  }
 }
 
 .section {
@@ -443,16 +459,18 @@ footer#footer {
   flex-direction: column;
   gap: 16px;
 
-  border-top: 1px solid var(--shadow-color);
-  text-align: center;
-  padding-top: 32px;
   font-size: 18px;
+  text-align: center;
+  border-top: 1px solid var(--shadow-color);
+  padding-top: 64px;
+  margin: 64px;
 
   @media (width < 1000px) {
     font-size: 14px;
   }
 
   @media (width < 900px) {
-    padding-top: 16px;
+    padding-top: 32px;
+    margin: 32px;
   }
 }
