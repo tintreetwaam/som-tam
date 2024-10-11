@@ -42,7 +42,7 @@ body {
   color: var(--primary-color);
   background-color: white;
 
-  @media (width < 1001px) {
+  @media (width < 1000px) {
     font-size: 16px;
   }
 }
@@ -84,7 +84,7 @@ nav#navbar {
   z-index: 1;
   top: 0px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     flex-direction: column;
   }
 }
@@ -110,7 +110,7 @@ button#nav-button {
   color: white;
   border: none;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     display: block;
   }
 }
@@ -118,7 +118,7 @@ button#nav-button {
 img#logo {
   height: 80px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     height: 64px;
   }
 }
@@ -149,7 +149,7 @@ li.nav-item {
   align-items: center;
   gap: 16px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     justify-content: right;
   }
 }
@@ -178,7 +178,7 @@ main#content {
   margin: 64px;
   font-family: SFPro;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     gap: 32px;
     margin: 32px 24px;
   }
@@ -193,7 +193,7 @@ img#banner {
   flex-direction: column;
   gap: 32px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     gap: 20px;
   }
 }
@@ -206,7 +206,7 @@ h1.header {
   letter-spacing: 4px;
   text-align: center;
 
-  @media (width < 1001px) {
+  @media (width < 1000px) {
     font-size: 48px;
   }
 }
@@ -218,7 +218,7 @@ h2.subheader {
   color: var(--secondary-color);
   letter-spacing: 2px;
 
-  @media (width < 1001px) {
+  @media (width < 1000px) {
     font-size: 24px;
   }
 }
@@ -245,11 +245,11 @@ button.menu-button {
   border: 2px solid var(--secondary-color);
   cursor: pointer;
 
-  @media (width < 1001px) {
+  @media (width < 1000px) {
     font-size: 18px;
   }
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     padding: 6px 12px;
   }
 }
@@ -279,7 +279,7 @@ div.menu {
   justify-content: center;
   gap: 64px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -293,7 +293,7 @@ div.menu-column {
 
   width: 480px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     gap: 20px;
     width: 320px;
   }
@@ -316,7 +316,7 @@ b.food-number, .menu-indentation {
   width: 32px;
   color: var(--secondary-color);
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     width: 24px;
   }
 }
@@ -329,7 +329,7 @@ div.price {
 i.menu-note {
   font-size: 16px;
 
-  @media (width < 1001px) {
+  @media (width < 1000px) {
     font-size: 14px;
   }
 }
@@ -343,7 +343,7 @@ div#specials {
   justify-content: center;
   gap: 64px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     flex-direction: column;
     gap: 20px;
   }
@@ -366,7 +366,7 @@ div.about-subsection {
   justify-content: center;
   gap: 64px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     flex-direction: column;
     gap: 16px;
   }
@@ -375,7 +375,7 @@ div.about-subsection {
 img.about-photo {
   width: 32%;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     width: 96%;
   }
 }
@@ -386,7 +386,7 @@ div.about-paragraph {
 
   width: 64%;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     width: 100%;
 
     text-align: justify;
@@ -402,7 +402,7 @@ div#contact-information {
   justify-content: center;
   gap: 32px;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     flex-direction: column;
     gap: 16px;
   }
@@ -416,7 +416,7 @@ div.contact-details {
 
   width: 42%;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     width: 100%;
     text-align: center;
   }
@@ -431,7 +431,7 @@ iframe#map {
   aspect-ratio: 1.25;
   border: none;
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     width: calc(100% - 8px);
   }
 }
@@ -448,11 +448,11 @@ footer#footer {
   padding-top: 32px;
   font-size: 18px;
 
-  @media (width < 1001px) {
+  @media (width < 1000px) {
     font-size: 14px;
   }
 
-  @media (width < 901px) {
+  @media (width < 900px) {
     padding-top: 16px;
   }
 }
