@@ -396,6 +396,26 @@ img.about-photo {
   }
 }
 
+img.right-photo-desktop {
+  @media (width >= 900px) {
+    display: inline;
+  }
+
+  @media (width < 900px) {
+    display: none;
+  }
+}
+
+img.right-photo-mobile {
+  @media (width >= 900px) {
+    display: none;
+  }
+
+  @media (width < 900px) {
+    display: inline;
+  }
+}
+
 div.about-paragraph {
   display: flex;
   align-items: center;
