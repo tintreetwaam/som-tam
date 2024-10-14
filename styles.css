@@ -165,6 +165,8 @@ a.nav-link {
 
 /* end of navbar styles */
 
+/* start of common styles */
+
 div.landing-point {
   position: relative;
   bottom: 64px;
@@ -243,6 +245,24 @@ h2.subheader {
   box-shadow: 0px 0px 2px 2px var(--shadow-color);
   border-radius: 8px;
 }
+
+footer#footer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  text-align: center;
+  border-top: 1px solid var(--shadow-color);
+  padding-top: 64px;
+  margin: 64px;
+
+  @media (width < 900px) {
+    padding-top: 32px;
+    margin: 32px;
+  }
+}
+
+/* end of common styles */
 
 /* start of menu styles */
 
@@ -324,11 +344,13 @@ div.menu-linebreak {
   height: 8px;
 }
 
-div.food, div.food-options {
+div.food,
+div.food-options {
   display: flex;
 }
 
-b.food-number, .menu-indentation {
+b.food-number,
+.menu-indentation {
   width: 32px;
   color: var(--secondary-color);
 
@@ -473,19 +495,3 @@ iframe#map {
 }
 
 /* end of contact styles */
-
-footer#footer {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  text-align: center;
-  border-top: 1px solid var(--shadow-color);
-  padding-top: 64px;
-  margin: 64px;
-
-  @media (width < 900px) {
-    padding-top: 32px;
-    margin: 32px;
-  }
-}
