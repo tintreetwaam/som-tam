@@ -459,15 +459,10 @@ footer#footer {
   flex-direction: column;
   gap: 16px;
 
-  font-size: 18px;
   text-align: center;
   border-top: 1px solid var(--shadow-color);
   padding-top: 64px;
   margin: 64px;
-
-  @media (width < 1000px) {
-    font-size: 14px;
-  }
 
   @media (width < 900px) {
     padding-top: 32px;
