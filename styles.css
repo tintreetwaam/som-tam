@@ -49,11 +49,12 @@ body {
 }
 
 a {
+  /* Was underline, var(--secondary-color) */
   color: inherit;
-  text-decoration: underline;
+  text-decoration: none;
 
   &:hover {
-    color: var(--secondary-color);
+    color: white;
   }
 }
 
@@ -191,13 +192,14 @@ ul {
 #tagline {
   letter-spacing: 1px;
   /* color: var(--secondary-color); */
+  /* originally Urzeit, 28px & 24px */
 
-  font-family: Urzeit;
+  font-family: SFPro;
   font-weight: 200px;
-  font-size: 28px;
-
+  font-size: 48px; 
+ 
   @media (width < 900px) {
-    font-size: 24px;
+    font-size: 38px;
   }
 }
 
@@ -216,7 +218,8 @@ ul {
 }
 
 .header {
-  font-size: 64px;
+  /* originally 64px & 48px */
+  font-size: 56px;
   font-weight: 400;
   font-family: Urzeit;
   color: var(--secondary-color);
@@ -229,6 +232,7 @@ ul {
 }
 
 .subheader {
+  /* originally 32px & 24px */
   font-size: 32px;
   font-weight: 200;
   font-family: Urzeit;
@@ -246,18 +250,25 @@ ul {
 }
 
 #footer {
+  /* original padding 64px & 32px */
   display: flex;
   flex-direction: column;
   gap: 16px;
 
   text-align: center;
   border-top: 1px solid var(--shadow-color);
-  padding-top: 64px;
-  margin: 0px 64px 64px 64px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0px 0px 0px 0px;
+
+  /* Added following 2 lines to make footer blue background */
+  background-color: var(--secondary-color);
+  color: white;
 
   @media (width < 900px) {
-    padding-top: 32px;
-    margin: 0px 32px 32px 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0px 0px 0px 0px;
   }
 }
 
