@@ -13,11 +13,12 @@
 /* end of declaration of font family */
 
 /* start of declaration of variables */
+/* Originally #164577 & #16457708 */
 
 :root {
   --primary-color: black;
-  --secondary-color: #164577;
-  --shadow-color: #16457708;
+  --secondary-color: #3e6a9a;
+  --shadow-color: #3e6b9a00;
 }
 
 /* end of declaration of variables */
@@ -162,7 +163,7 @@ ul {
 
   &:hover {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
@@ -187,6 +188,7 @@ ul {
 
 #introduction-section {
   text-align: center;
+   gap: 12px;
 }
 
 #tagline {
@@ -194,12 +196,12 @@ ul {
   /* color: var(--secondary-color); */
   /* originally Urzeit, 28px & 24px */
 
-  font-family: SFPro;
+  font-family: Urzeit;
   font-weight: 200px;
-  font-size: 48px; 
+  font-size: 54px; 
  
   @media (width < 900px) {
-    font-size: 38px;
+    font-size: 32px;
   }
 }
 
@@ -219,7 +221,7 @@ ul {
 
 .header {
   /* originally 64px & 48px */
-  font-size: 56px;
+  font-size: 54px;
   font-weight: 400;
   font-family: Urzeit;
   color: var(--secondary-color);
@@ -227,7 +229,7 @@ ul {
   text-align: center;
 
   @media (width < 1000px) {
-    font-size: 48px;
+    font-size: 40px;
   }
 }
 
@@ -276,7 +278,6 @@ ul {
   background-color: var(--secondary-color);
   color: white;
 }
-
 
 /* end of common styles */
 
@@ -391,6 +392,7 @@ ul {
 /* end of menu styles */
 
 /* start of coffee styles */
+/* Photo/Text widths were 32%/64% */
 
 .coffee-subsection {
   display: flex;
@@ -404,7 +406,7 @@ ul {
 }
 
 .coffee-photo {
-  width: 32%;
+  width: 44%;
 
   @media (width < 900px) {
     width: 96%;
@@ -435,7 +437,7 @@ ul {
   display: flex;
   align-items: center;
 
-  width: 64%;
+  width: 52%;
 
   @media (width < 900px) {
     width: 100%;
@@ -460,7 +462,7 @@ ul {
 }
 
 .thai-photo {
-  width: 32%;
+  width: 44%;
 
   @media (width < 900px) {
     width: 96%;
@@ -491,7 +493,7 @@ ul {
   display: flex;
   align-items: center;
 
-  width: 64%;
+  width: 52%;
 
   @media (width < 900px) {
     width: 100%;
@@ -539,7 +541,7 @@ ul {
 }
 
 .about-photo {
-  width: 32%;
+  width: 44%;
 
   @media (width < 900px) {
     width: 96%;
@@ -570,7 +572,7 @@ ul {
   display: flex;
   align-items: center;
 
-  width: 64%;
+  width: 52%;
 
   @media (width < 900px) {
     width: 100%;
@@ -600,7 +602,7 @@ ul {
   justify-content: center;
   gap: 16px;
 
-  width: 42%;
+  width: 44%;
 
   @media (width < 900px) {
     width: 100%;
