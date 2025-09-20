@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  font-family: "ProximaNova";
+  src: url("./fonts/proximanova_regular.ttf");
+}
+
+@font-face {
   font-family: "SFPro";
   src: url("./fonts/SF-Pro.ttf");
 }
@@ -14,10 +19,11 @@
 
 /* start of declaration of variables */
 /* Originally #164577 & #16457708 */
+/* Then #3e6a9a & #3e6b9a00 - 245890, 285584 */
 
 :root {
   --primary-color: black;
-  --secondary-color: #3e6a9a;
+  --secondary-color: #285584;
   --shadow-color: #3e6b9a00;
 }
 
@@ -39,13 +45,13 @@ p {
 
 body {
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: SFPro, ProximaNova, Arial, Helvetica, sans-serif;
   /* fallback */
   color: var(--primary-color);
   background-color: white;
 
-  @media (width < 1000px) {
-    font-size: 16px;
+  @media (width < 900px) {
+    font-size: 18px;
   }
 }
 
@@ -170,6 +176,7 @@ ul {
 /* end of navbar styles */
 
 /* start of common styles */
+
 .landing-point {
   position: relative;
   bottom: 64px;
@@ -182,27 +189,28 @@ ul {
 #content {
   display: flex;
   flex-direction: column;
-
   font-family: SFPro;
 }
 
 #introduction-section {
   text-align: center;
-   gap: 12px;
+  gap: 0px;
 }
 
 #tagline {
-  letter-spacing: 1px;
-  /* color: var(--secondary-color); */
-  /* originally Urzeit, 28px & 24px */
-
+  letter-spacing: 2px;
   font-family: Urzeit;
   font-weight: 200px;
-  font-size: 54px; 
- 
+  font-size: 54px;
+
   @media (width < 900px) {
-    font-size: 32px;
+    font-size: 48px;
   }
+}
+
+#introduction-text {
+  max-width: 65%;
+  margin: 0 auto;
 }
 
 .section {
@@ -228,21 +236,21 @@ ul {
   letter-spacing: 4px;
   text-align: center;
 
-  @media (width < 1000px) {
-    font-size: 40px;
+  @media (width < 900px) {
+    font-size: 48px;
   }
 }
 
 .subheader {
   /* originally 32px & 24px */
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 200;
   font-family: Urzeit;
   color: var(--secondary-color);
   letter-spacing: 2px;
 
   @media (width < 1000px) {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
@@ -259,17 +267,15 @@ ul {
 
   text-align: center;
   border-top: 1px solid var(--shadow-color);
-  padding-top: 32px;
+  padding-top: 16px;
   padding-bottom: 32px;
   margin: 0px 0px 0px 0px;
-
-  /* Added following 2 lines to make footer blue background */
   background-color: var(--secondary-color);
   color: white;
 
   @media (width < 900px) {
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
     margin: 0px 0px 0px 0px;
   }
 }
@@ -292,17 +298,14 @@ ul {
   font-size: 24px;
   font-weight: 200px;
   font-family: Urzeit;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 
   padding: 8px 16px;
   border: 2px solid var(--secondary-color);
   cursor: pointer;
 
-  @media (width < 1000px) {
-    font-size: 18px;
-  }
-
   @media (width < 900px) {
+    font-size: 22px;
     padding: 6px 12px;
   }
 }
@@ -330,7 +333,7 @@ ul {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 64px;
+  gap: 24px;
 
   @media (width < 900px) {
     flex-direction: column;
@@ -348,7 +351,7 @@ ul {
 
   @media (width < 900px) {
     gap: 20px;
-    width: 320px;
+    width: 80%;
   }
 }
 
@@ -357,8 +360,13 @@ ul {
   justify-content: space-between;
 }
 
+.menu-row-center {
+  display: flex;
+  justify-content: center;
+}
+
 .menu-linebreak {
-  height: 8px;
+  height: 14px;
 }
 
 .food,
@@ -368,12 +376,32 @@ ul {
 
 .food-number,
 .menu-indentation {
-  width: 32px;
+  width: 42px;
   color: var(--secondary-color);
 
   @media (width < 900px) {
-    width: 24px;
+    width: 36px;
   }
+}
+
+.food-daytime-description {
+  padding: 0px 40px 0px 0px;
+
+  @media (width < 900px) {
+    padding: 0px 30px 0px 0px;
+  }
+}
+
+.food-evening-description {
+  padding: 0px 42px 0px 0px;
+
+  @media (width < 900px) {
+    padding: 0px 36px 0px 0px;
+  }
+}
+
+.coffee-indentation {
+  width: 24px;
 }
 
 .price {
@@ -382,10 +410,10 @@ ul {
 }
 
 .menu-note {
-  font-size: 16px;
+  font-size: 20px;
 
-  @media (width < 1000px) {
-    font-size: 14px;
+  @media (width < 900px) {
+    font-size: 18px;
   }
 }
 
@@ -409,7 +437,7 @@ ul {
   width: 44%;
 
   @media (width < 900px) {
-    width: 96%;
+    width: 100%;
   }
 }
 
@@ -465,7 +493,7 @@ ul {
   width: 44%;
 
   @media (width < 900px) {
-    width: 96%;
+    width: 100%;
   }
 }
 
@@ -513,15 +541,14 @@ ul {
 
   @media (width < 900px) {
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
   }
 }
 
 .special {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-
+  gap: 16px;
   text-align: center;
 }
 
@@ -544,7 +571,7 @@ ul {
   width: 44%;
 
   @media (width < 900px) {
-    width: 96%;
+    width: 100%;
   }
 }
 
@@ -596,18 +623,25 @@ ul {
   }
 }
 
+#contact-table {
+  width: 100%;
+  text-align: left;
+  padding: 2px;
+
+  td,
+  th {
+    padding: 1px 12px;
+  }
+}
+
 .contact-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
 
-  width: 44%;
-
-  @media (width < 900px) {
-    width: 100%;
-    text-align: center;
-  }
+  width: 100%;
+  text-align: center;
 }
 
 .contact-icon {

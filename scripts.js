@@ -58,7 +58,7 @@ const enableMenuButtons = () => {
   const currentTime = currentDate.getTime();
 
   const switchoverDate = new Date();
-  switchoverDate.setHours(15, 0, 0, 0); // 3pm
+  switchoverDate.setHours(0, 0, 0, 0); // change first number to 24-hour, i.e. 14 = 2pm
   const switchoverTime = switchoverDate.getTime();
 
   if (currentTime < switchoverTime) {
@@ -92,14 +92,14 @@ const toggleEveningMenu = () => {
 
 const activateMenuButton = (buttonId) => {
   const menuButton = document.getElementById(buttonId);
-  menuButton.style.backgroundColor = "#164577";
+  menuButton.style.backgroundColor = "#285584";
   menuButton.style.color = "white";
 };
 
 const deactivateMenuButton = (buttonId) => {
   const menuButton = document.getElementById(buttonId);
   menuButton.style.backgroundColor = "white";
-  menuButton.style.color = "#164577";
+  menuButton.style.color = "#285584";
 };
 
 const showMenuHours = (menuHoursId) => {
