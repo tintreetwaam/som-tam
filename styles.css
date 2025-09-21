@@ -337,7 +337,7 @@ ul {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 44px;
 
   @media (width < 900px) {
     flex-direction: column;
