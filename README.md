@@ -2,4 +2,4 @@
 
 Website for Som Tam
 
-Copyright (c) 2025, Andrew Middleditch
+Copyright (c) 2026, Andrew Middleditch
