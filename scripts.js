@@ -92,14 +92,14 @@ const toggleEveningMenu = () => {
 
 const activateMenuButton = (buttonId) => {
   const menuButton = document.getElementById(buttonId);
-  menuButton.style.backgroundColor = "#285584";
+  menuButton.style.backgroundColor = "#346aa4";
   menuButton.style.color = "white";
 };
 
 const deactivateMenuButton = (buttonId) => {
   const menuButton = document.getElementById(buttonId);
   menuButton.style.backgroundColor = "white";
-  menuButton.style.color = "#285584";
+  menuButton.style.color = "#346aa4";
 };
 
 const showMenuHours = (menuHoursId) => {
